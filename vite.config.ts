@@ -7,7 +7,7 @@ export default defineConfig((config) => {
   return {
     plugins: [
       Userscript({
-        fileName: 'vite-userscript-template',
+        fileName: 'x-com-userscript',
         entry: 'src/index.ts',
         header: {
           name,
@@ -15,7 +15,8 @@ export default defineConfig((config) => {
           author,
           license,
           homepage,
-          match: ['http://localhost:3000', 'https://example.com']
+          icon: 'https://abs.twimg.com/favicons/twitter.3.ico',
+          match: ['*://twitter.com/*', '*://x.com/*']
         },
         server: {
           port: 3000
