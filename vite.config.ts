@@ -15,6 +15,7 @@ export default defineConfig((config) => {
           author,
           license,
           homepage,
+          connect: 'crashmax-dev.github.io',
           icon: 'https://abs.twimg.com/favicons/twitter.3.ico',
           match: ['*://twitter.com/*', '*://x.com/*']
         },
